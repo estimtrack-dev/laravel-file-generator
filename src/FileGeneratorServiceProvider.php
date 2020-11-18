@@ -18,7 +18,8 @@ class FileGeneratorServiceProvider extends ServiceProvider
             $this->commands([
                 FileGenListCommand::class,
                 FileGenNewCommand::class,
-                FileGenCommand::class
+                FileGenCommand::class,
+                CrudGenCommand::class
             ]);
         }
 

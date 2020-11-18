@@ -1,29 +1,33 @@
 ![Build Status](https://travis-ci.org/skyronic/laravel-file-generator.svg?branch=master)
 
-# Laravel file generator 
+# Estimtrack CRUD file generator 
 
-This is a Laravel package which helps you automate creation of files.
+Package de laravel per generar els CRUDs
 
-![](https://thumbs.gfycat.com/OrnateWebbedCommongonolek-size_restricted.gif) [High Res Link](https://gfycat.com/OrnateWebbedCommongonolek)
 
-### Benefits
-
-* If you create a type of file frequently, you can automate it and improve productivity. 
-* Prevent "context switching" where you lose focus for 30 seconds while you create new files, directories and populate it with boilerplate.
-* Comes with several built-in boilerplates. Easy to share your own as github gists.
-* All boilerplates and generators are part of your repository, letting you share standard templates with your team.
-* Find things like `artisan make:model` and `artisan make:controller` useful? You can make your own.
-* All boilerplates can be written as blade templates.
 
 ## Quick Start
 
-**Step 1**: Install the package
+**Step 1**: Instal·lar el package
+
+Afegir al composer.json a l'apartat require
+```bash
+ "estimtrack-dev/laravel-file-generator": "dev-master",
+```
+**Step 2**: Afegir el repo al composer.json
 
 ```bash
-$ composer require skyronic/laravel-file-generator
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/estimtrack-dev/laravel-file-generator/"
+        }
+    ]
+
 ```
 
-**Step 2**: Add `FileGeneratorServiceProvider` to your `config/app.php`
+
+**Step 3**: Add `FileGeneratorServiceProvider` to your `config/app.php`
 
 ```php
 'providers' => [

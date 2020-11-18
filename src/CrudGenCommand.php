@@ -18,7 +18,7 @@ class CrudGenCommand extends Command
      */
     private $fileList;
 
-    public $signature = "crud {businessName} {entityName}";
+    public $signature = "generate:crud {businessName} {entityName}";
 
     public $description = "Bake a fresh set of CRUD files! Warm from the oven.";
 
