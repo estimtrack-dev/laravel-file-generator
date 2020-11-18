@@ -12,9 +12,12 @@
 namespace {{ Format::getNamespace($path) }};
 
 class {{ Format::baseName($name) }} @if($extends)extends {{ $extends }}@endif  {
-@if($constructor)
+
     public function __construct () {
 
     }
-@endif
+    public function execute() {
+
+    }
+
 }
