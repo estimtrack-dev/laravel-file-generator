@@ -16,7 +16,7 @@ class GetListOfFilesToCreateService
             $basePath.'Services/Get'.$entityName.'Service',
             $basePath.'Services/Create'.$entityName.'Service',
             $basePath.'Services/Update'.$entityName.'Service',
-            $basePath.'Services/Delete'.$entityName.'Service.php',
+            $basePath.'Services/Delete'.$entityName.'Service',
 
             $basePath.'UseCases/Get'.$entityName.'/Get'.$entityName.'Request',
             $basePath.'UseCases/Get'.$entityName.'/Get'.$entityName.'UseCase',
