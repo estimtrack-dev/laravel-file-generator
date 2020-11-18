@@ -8,7 +8,7 @@ class GetListOfFilesToCreateService
 {
 
     public function execute($businessName, $entityName){
-        $basePath = 'app/'.$businessName.'/'.$entityName.'/';
+        $basePath = $businessName.'/'.$entityName.'/';
         return [
             $basePath.'Domain/'.$entityName.'Entity.php',
             $basePath.'Repositories/'.$entityName.'Repository.php',
